@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohini - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 1, 23);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        height: 80px;
+        background-color: rgb(3, 3, 58); /*will change later */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .right {
+        width: 50%;
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      nav ul li {
+        list-style-type: none;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(148, 91, 163);
+        font-size: 1.01rem;
+      }
+
+      .first-section {
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .left-section {
+        font-size: 3rem;
+      }
+
+      .right-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .purple {
+        color: rgb(181, 28, 181);
+      }
+
+      #element {
+        color: rgb(181, 28, 181);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sohini's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first-section">
+        <div class="left-section">
+          <div>Hi, My name is <span class="purple">Sohini</span></div>
+          <div>I am a passionate</div>
+          <!-- <div>Web Developer.</div> -->
+          <span id="element"></span>
+        </div>
+        <div class="right-section">
+          <img src="image.jpeg" alt="" />
+        </div>
+      </section>
+      <section class="second-section"></section>
+    </main>
+    <!-- Using Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Graphic Designer", "Content Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
